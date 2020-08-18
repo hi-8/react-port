@@ -21,6 +21,12 @@
       // .tsxファイルのJSXをサポートする際の方式
       "jsx": "react",
       // default export無しでのdefault importを許可
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      // 型定義ファイルを作るのでディレクトリを指定
+      "typeRoots": [
+        "typings",
+        "node_modules/@types"
+      ],
     }
   }
