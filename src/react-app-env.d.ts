@@ -49,7 +49,9 @@ declare module '*.svg' {
   const src: string;
   export default src;
 }
-
+// 追加したやつ
+declare module '*.scss';
+//create-react-appで入ってたやつ
 declare module '*.module.css' {
   const classes: { readonly [key: string]: string };
   export default classes;

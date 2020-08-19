@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.scss';
+import * as React from 'react';
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={styles.app}>
+      <header className={styles.appHeader}>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          test
         </p>
       </header>
     </div>
