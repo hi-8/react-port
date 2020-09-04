@@ -1,13 +1,20 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import styles from './App.module.scss';
+import HomePage from "./pages/HomePage";
+import WorksPage from "./pages/WorksPage";
 
-function App() {
+
+const App: React.FC =() => {
   return (
     <div className={styles.app}>
       <header className={styles.appHeader}>
-        <p>
-          test
-        </p>
+        <Router>
+          <Switch>
+            <Route path="/works" component={WorksPage} exact />
+            <Route path="/" component={HomePage} exact />
+          </Switch>
+        </Router>
       </header>
     </div>
   );

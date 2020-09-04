@@ -24,7 +24,7 @@
     "css-loader": "^4.2.1",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
-    "eslint": "^6.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "3.0.3",
     "eslint-plugin-flowtype": "4.6.0",
@@ -69,7 +69,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint": "eslint src --ext .ts --ext .tsx --fix"  
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -142,6 +143,12 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@types/react-router-dom": "^5.1.5",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "react-router-dom": "^5.2.0",
     "typings-for-css-modules-loader": "^1.7.0"
   }
 }
